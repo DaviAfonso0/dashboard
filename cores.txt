@@ -1,0 +1,58 @@
+Fundos & Superfícies
+Base #05081A
+Surface #0C1033
+Card #111840
+Elevated #1A2258
+
+Acentos Principais
+Ciano #00E5C0
+Roxo #7C5CFA
+Magenta #FF2D8A
+Azul #2196F3
+
+Série de Dados para Gráficos
+
+Background principal: #0F172A (azul bem escuro moderno)
+Surface / cards: #111C33
+Borda sutil: #1F2A44
+Texto principal: #E5E7EB
+Texto secundário: #94A3B8
+
+Azul principal (tech): #3B82F6
+Ciano (destaque moderno): #22D3EE
+Verde (positivo / crescimento): #22C55E
+Amarelo (alerta leve): #FACC15
+Vermelho (erro / queda): #EF4444
+Roxo (premium / dados): #A855F7
+
+Sugestão de uso (importante)
+Azul → gráficos principais
+Ciano → hover / interações
+Verde → crescimento / sucesso
+Vermelho → queda / alerta
+Roxo → insights ou métricas especiais
+
+Principal (UI / textos)
+
+👉 Inter
+
+Muito usada em dashboards modernos (Notion, Vercel, etc.)
+Super limpa e legível
+
+ítulos (impacto visual)
+
+👉 Poppins
+
+Levemente arredondada
+Boa para títulos de cards e KPIs
+
+Alternativa:
+
+Sora (bem tech e moderna)
+
+Números / dados (opcional)
+
+👉 JetBrains Mono
+
+Perfeita para valores, estatísticas e código
+Dá sensação “tech/data”
