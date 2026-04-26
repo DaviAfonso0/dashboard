@@ -78,6 +78,7 @@ header{
     grid-area: main;
     display: grid;
     justify-items: center;
+    row-gap: 30px;
     grid-template-columns: 1fr minmax(0, 900px) 1fr;
 }
 
@@ -95,11 +96,19 @@ header{
     backdrop-filter: blur(10px);
 }
 
+/* seção grafico */
 #tec-dia h2{
     color: white;
     font-family: var(--font-titulo);
     text-align: center;
     margin-bottom: 10px;
+}
+
+.dados{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #grafico-1{
@@ -170,5 +179,44 @@ header{
     background-color: #FF4D9D;
 }
 
+/* seção da tabela */
+
+.container-tabela{
+    overflow-x: auto;
+}
+#tabela  table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tabela  caption{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#tabela table thead{
+    background-color: #0d1b2a;
+    color: #00e5ff;
+}
+
+#tabela table tbody > tr:nth-child(even){
+    background-color: #1a1f2e;
+}
+
+#tabela table tbody > tr:nth-child(odd){
+    background-color: #141824;
+}
+
+#tabela  table  th,td{
+    border: 1px solid #2a2f3e;
+    padding: 10px;
+}
+
+#tabela table td{
+    color: #ffffff;
+    opacity: 0.85
+}
 
 
