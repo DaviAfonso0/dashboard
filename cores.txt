@@ -39,8 +39,7 @@ Principal (UI / textos)
 Muito usada em dashboards modernos (Notion, Vercel, etc.)
 Super limpa e legível
 
-ítulos (impacto visual)
-
+Títulos (impacto visual)
 👉 Poppins
 
 Levemente arredondada
