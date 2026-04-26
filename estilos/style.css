@@ -75,7 +75,6 @@ header{
 
 #main{
     margin-top: 20px;
-    margin: ;
     grid-area: main;
     display: grid;
     justify-items: center;
