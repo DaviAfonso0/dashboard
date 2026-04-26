@@ -5,7 +5,7 @@
 :root{
     --cor-back: #05081A;        
     --cor-main: #0A0F2E;          
-    --cor-header-sidebar: #0C1033;
+    --cor-header-sidebar: #0c102c;
 
     --card-bg: rgba(15, 20, 58, 0.7);
     --card-border: rgba(79, 140, 255, 0.15);
@@ -26,7 +26,7 @@
 }
 
 body{
-    background-color: #01061f;
+    background-color: var(--cor-back);
     font-family: var(--font-principal);
     display: grid;
     grid-template-areas: 
@@ -75,6 +75,7 @@ header{
 
 #main{
     margin-top: 20px;
+    margin: ;
     grid-area: main;
     display: grid;
     justify-items: center;
@@ -88,8 +89,8 @@ header{
     justify-content: center;
     row-gap: 20px;
     border-radius: 10px;
-    width: 400px;
-    background-color: var(--cor-back);
+    max-width: 400px;
+    background-color: #0C1033;
     padding: 20px;
     backdrop-filter: blur(10px);
 }
