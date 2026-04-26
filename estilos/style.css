@@ -74,7 +74,7 @@ header{
 }
 
 #main{
-    margin-top: 20px;
+    margin: 20px auto 20px auto;
     grid-area: main;
     display: grid;
     justify-items: center;
