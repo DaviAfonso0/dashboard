@@ -107,9 +107,9 @@ header{
 
 #grafico-1{
     background: conic-gradient(
-        #4F8CFF 0% 30%,
-        #00F5FF 30% 90%,
-        #FF4D9D 90% 100%
+        #2B7BE0 0% 30%,
+        #2BE0C8 30% 90%,
+        #E0B82B 90% 100%
     );
     height: 150px;
     width: 200px;
@@ -162,15 +162,15 @@ header{
 }
 
 #html{
-    background-color: #4F8CFF;
+    background-color: #2B7BE0;
 }
 
 #css{
-    background-color: #00F5FF;
+    background-color: #2BE0C8;
 }
 
 #js{
-    background-color: #FF4D9D;
+    background-color: #E0B82B;
 }
 
 /* seção da tabela */
