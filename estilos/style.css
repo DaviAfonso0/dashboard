@@ -88,7 +88,6 @@ header{
     max-width: 400px;
     background-color: #0C1033;
     padding: 20px;
-    backdrop-filter: blur(10px);
 }
 
 /* seção grafico */
@@ -286,6 +285,7 @@ header{
     color: white;
 }
 
+/* section metas de horas semanais */
 #metas-container{
     width: 100%;
     display: flex;
@@ -366,4 +366,76 @@ header{
     text-decoration: underline;
     font-weight: bolder;
     cursor: pointer;
+}
+
+/* section evolução das minhas habilidade */
+
+#dominio-linguagens > h2{
+    text-align: center;
+    color: white;
+    font-family: var(--font-titulo);
+    margin-bottom: 20px;
+}
+
+.linguagens-container{
+    margin-bottom: 25px;
+}
+
+.container-nomes-skills{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    color: white;
+}
+
+.nome{
+    font-family: var(--font-titulo);
+    font-size: 1rem;
+    margin-right: 2px;
+}
+
+.nivel{
+    color: rgb(189, 188, 188);
+    opacity: 0.4;
+    font-size: 0.9rem;
+}
+
+.porcentagem-skills{
+    font-family: var(--font-valores);
+}
+.barra-externa{
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 100%;
+    height: 15px;
+    border-radius: 99px;
+}
+
+.barra-interna{
+    height: 100%;
+    border-radius: 99px;
+}
+
+#progresso-html{
+    width: 80%;
+    background-color: #E34F26;
+}
+
+#progresso-css{
+    width: 70%;
+    background-color: #1572B6;
+}
+
+#progresso-js{
+    width: 40%;
+    background-color: #F7DF1E;
+}
+
+#progresso-py{
+    width: 25%;
+    background-color: #3776AB;
+}
+
+#progresso-njs{
+    width: 5%;
+    background-color: #339933;
 }
