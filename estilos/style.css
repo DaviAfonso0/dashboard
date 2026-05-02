@@ -10,9 +10,6 @@
     --card-bg: rgba(15, 20, 58, 0.7);
     --card-border: rgba(79, 140, 255, 0.15);
 
-    --card-glow: 0 0 20px rgba(79, 140, 255, 0.15);
-    --card-hover: 0 0 25px rgba(166, 107, 255, 0.25);
-    
 
     --font-principal:  "Inter", sans-serif;
     --font-titulo:  "Poppins", sans-serif;
@@ -217,12 +214,15 @@ header{
 
 #tabela table td{
     color: #ffffff;
-    opacity: 0.85
+    padding: 12px 16px;
 }
 
 /* seção grafico horas estudadas por dia */
 
 .estudos-dia{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     width: 100%;
 }
 .estudos-dia h2{
@@ -264,7 +264,7 @@ header{
     height: 85px;
 }
 
-#progressso-ter{
+#progresso-ter{
     height: 114px;
 }
 
@@ -272,7 +272,7 @@ header{
     height: 57px;
 }
 
-#progressso-qui{
+#progresso-qui{
     height: 171px;
 }
 
@@ -300,6 +300,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
+
 
 }
 #metas-container > h2{
@@ -385,7 +386,7 @@ header{
 }
 
 .linguagens-container{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .container-nomes-skills{
@@ -402,8 +403,7 @@ header{
 }
 
 .nivel{
-    color: rgb(189, 188, 188);
-    opacity: 0.4;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
 }
 
@@ -467,20 +467,184 @@ header{
     }
     #main section{
         grid-column: auto;
+        grid-row: auto;
         align-self: stretch;
     }
-    #tec-dia{
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
+
+    .container-tabela{
+        overflow: auto;
+        height: 300px;
+        padding-right: 8px;
     }
     #tabela{
-        grid-row: 3 ;
+        width: 100%;
+        max-width: 600px;
     }
+    #tec-dia{
+        grid-column: 1;
+        grid-row: 1;
+        padding: 10px;
+    }
+
+    #metas-container{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
     .estudos-dia{
+        grid-column: 1 / -1;
         grid-row: 2;
     }
-    #metas-container{
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
+
+    #tabela{
+        grid-column: 1 / -1;
+        grid-row: 3;
     }
 }
+@media (min-width: 1300px){
+    body{
+        grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+        grid-template-columns: 250px 1fr;
+    }
+
+    header{
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-flow: row nowrap;
+        padding: 10px 0px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+    }
+
+    #maiores{
+        display: none;
+    }
+    
+    #nav-header{
+        padding-right: 20px;
+    }
+
+    #lista-nav  li{
+        background: none;
+    }
+
+    #lista-nav i{
+        font-size: 20px;
+    }
+
+    .span-header{
+        display: none;
+    }
+
+    #lista-nav a{
+        transition: .3s;
+    }
+
+    #lista-nav a:hover {
+        color: #00e5ff;
+        transition: color 0.2s ease;
+        transform: translateY(-2px);
+    }
+
+    #sidebar{
+        position: sticky;
+        height: 100vh;
+        top: 0;
+        display: flex;
+        flex-flow: column  nowrap;
+        align-items: center;
+        grid-area: sidebar;
+        background-color: var(--cor-header-sidebar);
+        border-right: 2px solid #05081A;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    #lista-sidebar{
+        list-style: none;
+    }
+
+    #lista-sidebar a{
+        display: flex;
+        flex-flow: row nowrap;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+        column-gap: 2px;
+        font-size: 1.4rem;
+        border-radius: 8px;
+        padding: 10px;
+
+        transition-duration: .5s;
+    }
+
+    #lista-sidebar a:hover{
+        background-color: #121c55;
+    }
+    
+    #main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+    
+    }
+    #main section{
+       max-width: none;
+       grid-column: auto;
+       grid-row: auto;
+       align-self: start;
+       box-shadow: var(--card-glow);
+       transition: box-shadow 0.3s ease;
+       padding: 20px;
+       
+    }
+    #main section:hover{
+        background-color: #090f2e;
+    }
+
+    #metas-container,
+    #dominio-linguagens,
+    .estudos-dia {
+        min-height: 440px; /* ajusta o valor até ficar bom */
+    }
+
+   
+    #main #tec-dia{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #main #tabela{
+        grid-column: 2 / 4;
+        grid-row: 1;
+    }
+
+    #main .estudos-dia{
+        grid-column: 1 / 2;
+        grid-row: 3;
+        
+    }
+
+    #main #metas-container{
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    #main #dominio-linguagens{
+        grid-column:  2 / 4;
+        grid-row: 2;
+    }
+
+    #lista-tecnologias li{
+        column-gap: 10px;
+    }
+
+
+    #lista-tecnologias .legend{
+        width: 20px;
+        height: 19px;
+    }
+
+}
+
