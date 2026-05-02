@@ -16,6 +16,10 @@
                 <img src="imagens/logo-mobile.png" alt="logo para telas menores" class="logo"  id="menores">
             </a>
         </h1>
+
+        <button aria-label="menu" id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <nav id="nav-header">
             <ul id="lista-nav">
                 <li>
@@ -323,5 +327,14 @@
             </div>
         </section>
     </main>
+    <script>
+        const menu = document.getElementById('menu');
+        const navegacao = document.getElementById('nav-header');
+        menu.addEventListener('click',toggleMenu);
+
+        function toggleMenu(){
+            navegacao.classList.toggle('ativo');
+        }
+    </script>
 </body>
 </html>

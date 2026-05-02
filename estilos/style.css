@@ -50,6 +50,30 @@ header{
     display: none;
 }
 
+#menu{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.3rem;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+#nav-header {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+#nav-header.ativo {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
 #lista-nav{
     display: flex;
     flex-flow: column nowrap;
@@ -454,6 +478,16 @@ header{
     #maiores{
         display: inline;
         max-width: 250px;
+    }
+    #menu{
+        display: none;
+    }
+    #nav-header{
+        display: block;
+        opacity: 1;
+        max-height: none;
+        transform: none;
+        pointer-events: auto;
     }
     #lista-nav{
         flex-direction: row;
